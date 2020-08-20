@@ -31,7 +31,7 @@ timeandplace help
 All interaction is done via the `TimeAndPlace` object. It has the following methods:
 
 ```python
-client = TimeAndPlace()
+client = TimeAndPlace() # Optional: endpoint="https://example.com"
 client.login(str, str)
 
 # These require login to be called
