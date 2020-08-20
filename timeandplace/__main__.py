@@ -101,6 +101,9 @@ command_actions = {
 # Handle CLI args
 ap = argparse.ArgumentParser(description="Use the \"help\" action for info on actions")
 
+# Endpoints
+ap.add_argument("-e", "--endpoint", help="Set a custom server address")
+
 # Auth
 ap.add_argument("--username", help="TimeAndPlace username", required=False)
 ap.add_argument("--password", help="TimeAndPlace password", required=False)
@@ -140,7 +143,10 @@ if not args.action in command_actions:
     exit(1)
 
 # Create a new client
-client = TimeAndPlace()
+if args.endpoint:
+    client = TimeAndPlace(endpoint = args.endpoint)
+else:
+    client = TimeAndPlace()
 
 # Run action
 command_actions[args.action][0](args, client)

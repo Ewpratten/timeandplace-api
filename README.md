@@ -1,4 +1,5 @@
-# TimeAndPlace API & CLI Application [![](https://img.shields.io/pypi/v/timeandplace)](https://pypi.org/project/timeandplace/) ![](https://img.shields.io/pypi/l/timeandplace) ![](https://img.shields.io/pypi/implementation/timeandplace)
+# TimeAndPlace API & CLI Application 
+[![](https://img.shields.io/pypi/v/timeandplace)](https://pypi.org/project/timeandplace/) ![](https://img.shields.io/pypi/l/timeandplace) ![](https://img.shields.io/pypi/implementation/timeandplace)
 
 This repo contains both a Python3 API, and a command-line application for interacting with [@salamander2](https://github.com/salamander2)'s [TimeAndPlace](https://github.com/salamander2/TimeAndPlace) service over a network. The main reason behind this package is for use in another project I have planned for room occupancy tracking.
 
@@ -16,7 +17,7 @@ Currently, this is mostly a Read-Only API. The following data can be accessed wh
 The command-line app uses "action commands" in the format of:
 
 ```sh
-timeandplace --username <username> --password <password> <action>
+timeandplace --username <username> --password <password> <action> [optional: --endpoint <url>]
 ```
 
 A list of possible actions can be viewed by running:
