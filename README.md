@@ -12,6 +12,13 @@ Currently, this is mostly a Read-Only API. The following data can be accessed wh
 
 **\*** This data can be written via the API
 
+## Installation
+
+This is a PYPI package. Either call `setup.py` directly, or run:
+```sh
+python3 -m pip install timeandplace
+```
+
 ## CLI usage
 
 The command-line app uses "action commands" in the format of:
