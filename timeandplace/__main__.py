@@ -83,7 +83,8 @@ def get_student_ids(args, client: TimeAndPlace):
         exit(1)
 
     # Make lookup request
-    students = client.getAllStudents()
+    students = list(client.getAllStudents())
+    students.sort()
 
     # Dump data
     for student in students:
