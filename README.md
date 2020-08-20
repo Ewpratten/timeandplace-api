@@ -24,13 +24,13 @@ python3 -m pip install timeandplace
 The command-line app uses "action commands" in the format of:
 
 ```sh
-timeandplace --username <username> --password <password> <action> [optional: --endpoint <url>]
+python3 -m timeandplace --username <username> --password <password> <action> [optional: --endpoint <url>]
 ```
 
 A list of possible actions can be viewed by running:
 
 ```sh
-timeandplace help
+python3 -m timeandplace help
 ```
 
 ## API usage
